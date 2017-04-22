@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+  <div class = "field">
+    <%= f.label :pictures %><br>
+    <%= f.file_field :post_image, multiple: true %>
+    </div>
+
+
   <div class="field">
     <%= f.label :host_species %>
     <%= f.text_field :host_species %>
@@ -29,11 +35,6 @@
   <div class="field">
     <%= f.label :longitude %>
     <%= f.text_field :longitude %>
-  </div>
-
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.text_field :user_id %>
   </div>
 
   <div class="actions">

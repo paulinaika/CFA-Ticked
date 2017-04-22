@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <% @post.post_image.each do |image| %>
+    <img src="<%= image.url %>">
+  <% end %>
+</p>
+
+<p>
   <strong>Host species:</strong>
   <%= @post.host_species %>
 </p>
@@ -22,7 +28,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @post.user.email %>
+  <%= @post.user.username %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

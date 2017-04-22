@@ -14,3 +14,16 @@
  *= require_self
  */
 @import "materialize";
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.block-display {
+  margin: 0;
+    display: inline-block;
+}
+
+.flotation-right{
+  float: right;
+}
