@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  common_name: MyString
+  scientific_name: MyString
+  host_species: MyString
+  common_parasites: MyString
+  pathogenic_effect: MyString
+  morphology: MyString
+  description: MyString
+  control_measures: MyString
+  latitude: 1.5
+  longtitude: 1.5
+
+two:
+  common_name: MyString
+  scientific_name: MyString
+  host_species: MyString
+  common_parasites: MyString
+  pathogenic_effect: MyString
+  morphology: MyString
+  description: MyString
+  control_measures: MyString
+  latitude: 1.5
+  longtitude: 1.5

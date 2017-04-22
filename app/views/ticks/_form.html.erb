@@ -1,0 +1,67 @@
+<%= form_for(tick) do |f| %>
+  <% if tick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tick.errors.count, "error") %> prohibited this tick from being saved:</h2>
+
+      <ul>
+      <% tick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :common_name %>
+    <%= f.text_field :common_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :scientific_name %>
+    <%= f.text_field :scientific_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :host_species %>
+    <%= f.text_field :host_species %>
+  </div>
+
+  <div class="field">
+    <%= f.label :common_parasites %>
+    <%= f.text_field :common_parasites %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pathogenic_effect %>
+    <%= f.text_field :pathogenic_effect %>
+  </div>
+
+  <div class="field">
+    <%= f.label :morphology %>
+    <%= f.text_field :morphology %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :control_measures %>
+    <%= f.text_field :control_measures %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longtitude %>
+    <%= f.text_field :longtitude %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Common name:</strong>
+  <%= @tick.common_name %>
+</p>
+
+<p>
+  <strong>Scientific name:</strong>
+  <%= @tick.scientific_name %>
+</p>
+
+<p>
+  <strong>Host species:</strong>
+  <%= @tick.host_species %>
+</p>
+
+<p>
+  <strong>Common parasites:</strong>
+  <%= @tick.common_parasites %>
+</p>
+
+<p>
+  <strong>Pathogenic effect:</strong>
+  <%= @tick.pathogenic_effect %>
+</p>
+
+<p>
+  <strong>Morphology:</strong>
+  <%= @tick.morphology %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tick.description %>
+</p>
+
+<p>
+  <strong>Control measures:</strong>
+  <%= @tick.control_measures %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @tick.latitude %>
+</p>
+
+<p>
+  <strong>Longtitude:</strong>
+  <%= @tick.longtitude %>
+</p>
+
+<%= link_to 'Edit', edit_tick_path(@tick) %> |
+<%= link_to 'Back', ticks_path %>

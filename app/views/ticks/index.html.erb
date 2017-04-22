@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ticks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Common name</th>
+      <th>Scientific name</th>
+      <th>Host species</th>
+      <th>Common parasites</th>
+      <th>Pathogenic effect</th>
+      <th>Morphology</th>
+      <th>Description</th>
+      <th>Control measures</th>
+      <th>Latitude</th>
+      <th>Longtitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ticks.each do |tick| %>
+      <tr>
+        <td><%= tick.common_name %></td>
+        <td><%= tick.scientific_name %></td>
+        <td><%= tick.host_species %></td>
+        <td><%= tick.common_parasites %></td>
+        <td><%= tick.pathogenic_effect %></td>
+        <td><%= tick.morphology %></td>
+        <td><%= tick.description %></td>
+        <td><%= tick.control_measures %></td>
+        <td><%= tick.latitude %></td>
+        <td><%= tick.longtitude %></td>
+        <td><%= link_to 'Show', tick %></td>
+        <td><%= link_to 'Edit', edit_tick_path(tick) %></td>
+        <td><%= link_to 'Destroy', tick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tick', new_tick_path %>
