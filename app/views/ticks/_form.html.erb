@@ -1,3 +1,5 @@
+<%= javascript_include_tag ('locationpicker.jquery.min.js') %>
+
 <%= form_for(tick) do |f| %>
   <% if tick.errors.any? %>
     <div id="error_explanation">
@@ -60,6 +62,52 @@
     <%= f.label :longtitude %>
     <%= f.text_field :longtitude %>
   </div>
+
+
+  Location: <input type="text" id="address" style="width: 300px"/>
+
+  <div id="somecomponent" style="width: 500px; height: 400px;"></div>
+
+  <script>
+      $('#somecomponent').locationpicker(
+        {
+    location: {
+        latitude: -33.865143,
+        longitude: 151.209900,
+      },
+      locationName: "",
+      radius: 500,
+      zoom: 5,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [],
+      mapOptions: {},
+      scrollwheel: true,
+      inputBinding: {
+          latitudeInput: $('#tick_latitude'),
+          longitudeInput: $('#tick_longtitude'),
+          radiusInput: null,
+          locationNameInput: $('#address')
+      },
+      enableAutocomplete: true,
+      enableAutocompleteBlur: true,
+      autocompleteOptions: true,
+      addressFormat: 'postal_code',
+      enableReverseGeocode: true,
+      draggable: true,
+      onchanged: function(currentLocation, radius, isMarkerDropped) {},
+      onlocationnotfound: function(locationName) {},
+      oninitialized: function (component) {},
+      // must be undefined to use the default gMaps marker
+      markerIcon: undefined,
+      markerDraggable: true,
+      markerVisible : true
+  }
+
+      );
+
+
+
+  </script>
 
   <div class="actions">
     <%= f.submit %>

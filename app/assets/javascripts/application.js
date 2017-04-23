@@ -13,7 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require underscore
+
+//= require cable
+//= require gmaps_google
 
 
 $( document ).ready(function(){
