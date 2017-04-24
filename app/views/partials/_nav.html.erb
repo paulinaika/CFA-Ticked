@@ -8,10 +8,10 @@
       <li><a href="sass.html">Taxonomy</a></li>
 
       <% if user_signed_in? %>
-       <li><a href=/ticks>Ticks</a></li>
-       <li><a href=/pages/geomap>Geomap</a></li>
-       <li><a href=/posts>Forum</a></li>
-       <li><a href=/pages/contact>Contact Us</a></li>
+       <li><a href='/ticks'>Ticks</a></li>
+       <li><a href='/pages/geomap' data-turbolinks="false">Geomap</a></li>
+       <li><a href='/posts'>Forum</a></li>
+       <li><a href='/pages/contact'>Contact Us</a></li>
 
        <!-- dropdown trigger -->
        <li><a class="dropdown-button capitalize" href="#!" data-activates="dropdown1"><%= current_user.username %><i class="material-icons right">arrow_drop_down</i></a></li>
@@ -24,9 +24,9 @@
     <ul class="side-nav" id="mobile-demo">
       <li><a href=#>Taxonomy</a></li>
         <% if user_signed_in? %>
-        <li><a href=/pages/geomap>Geomap</a></li>
-        <li><a href=/posts>Forum</a></li>
-        <li><a href=/pages/contact>Contact Us</a></li>
+        <li><a href='/pages/geomap'>Geomap</a></li>
+        <li><a href='/posts'>Forum</a></li>
+        <li><a href='/pages/contact'>Contact Us</a></li>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
         <% else %>
        <li><%= link_to 'Login', new_user_session_path  %></li>

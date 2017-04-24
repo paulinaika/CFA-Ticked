@@ -2,24 +2,24 @@
 <script src='//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js' type='text/javascript'></script> <!-- only if you need custom infoboxes -->
 
 <script>
-handler = Gmaps.build('Google');
-handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-  markers = handler.addMarkers([
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
 
-    <% @ticks.each do |tick| %>
-      {
-        "lat": <%= tick.latitude %>,
-        "lng": <%= tick.longtitude %>,
-        "picture": {
-          "url": "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png",
-          "width":  32,
-          "height": 32
+      <% @ticks.each do |tick| %>
+        {
+          "lat": <%= tick.latitude %>,
+          "lng": <%= tick.longtitude %>,
+          "picture": {
+            "url": "http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-32.png",
+            "width":  32,
+            "height": 32
+          },
+          "infowindow": "<%= tick.scientific_name %>"
         },
-        "infowindow": "<%= tick.scientific_name %>"
-      },
-    <% end %>
-  ]);
-  handler.bounds.extendWith(markers);
-  handler.fitMapToBounds();
-});
+      <% end %>
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
 </script>
