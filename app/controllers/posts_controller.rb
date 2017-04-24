@@ -10,6 +10,10 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
+    @comment = Comment.new
+    # Returns an array with all comments that relate to the post
+    @comments = @post.comments
   end
 
   # GET /posts/new
