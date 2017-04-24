@@ -69,6 +69,9 @@
   <div id="somecomponent" style="width: 500px; height: 400px;"></div>
 
   <script>
+  $( document ).on('turbolinks:load', function() {
+  console.log("It works on each visit!")
+})
       $('#somecomponent').locationpicker(
         {
     location: {
