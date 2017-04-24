@@ -7,5 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-user1 = User.create!(email: 'researcher@gmail.com', password: '123456')
-user2 = User.create!(email: 'cattleowner@gmail.com', password: '123456')
+user1 = User.create!(email: 'researcher@gmail.com', password: '123456', username: "researcher1")
+user2 = User.create!(email: 'cattleowner@gmail.com', password: '123456', username: "cattleowner")
+
+user1.add_role :admin
