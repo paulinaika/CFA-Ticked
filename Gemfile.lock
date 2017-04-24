@@ -186,7 +186,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   materialize-sass
-  pg
+  pg (~> 0.18)
   puma (~> 3.0)
   pundit
   rails (~> 5.0.2)
