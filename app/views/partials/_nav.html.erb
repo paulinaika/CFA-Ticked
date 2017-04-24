@@ -8,7 +8,9 @@
       <li><a href="sass.html">Taxonomy</a></li>
 
       <% if user_signed_in? %>
-       <li><a href='/ticks'>Ticks</a></li>
+          <% if current_user.admin? %>
+          <li><a href='/ticks'>Ticks</a></li>
+          <% end %>
        <li><a href='/pages/geomap' data-turbolinks="false">Geomap</a></li>
        <li><a href='/posts'>Forum</a></li>
        <li><a href='/pages/contact'>Contact Us</a></li>

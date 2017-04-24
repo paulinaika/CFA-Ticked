@@ -1,45 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<h3 class="block-display">New Sighting</h3><a href=/posts/new class="btn-floating btn-medium waves-effect waves-light red flotation-right">
-  <i class="material-icons">add</i>
+<h3 class="block-display">New Sighting</h3>
+<a href=/posts/new class="btn-floating btn-medium waves-effect waves-light red flotation-right">
+    <i class="material-icons">add</i>
 </a>
-<p> Forum to discuss new sightings and realated questions regarding ticks with the community. </p>
-
+<p>
+    Forum to discuss new sightings and realated questions regarding ticks with the community.
+</p>
 
 <% @posts.each do |post| %>
 <div class="col s12 m7">
-    <div class="card horizontal">
-        <div class="card-image">
-            <%= image_tag(post.post_image[0].url) %><br>
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-                <p>
-                    <strong>Host Species:</strong>
-                    <%= post.host_species %></p>
-                <p>
-                    <strong>Description:</strong>
-                    <%= post.description %></p>
-                <p>
-                    <strong>Latitude:</strong>
-                    <%= post.latitude %></p>
-                <p>
-                    <strong>Longtitude:</strong>
-                    <%= post.longitude %></p>
-                </br>
-                <%= link_to 'Show', post %>|
-                <%= link_to 'Edit', edit_post_path(post) %>|
-                <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <div class="card horizontal">
+          <div class="card-image">
+              <%= image_tag(post.post_image[0].url) %><br>
+          </div>
+          <div class="card-stacked">
+              <div class="card-content">
+                  <p>
+                      <strong>Host Species:</strong>
+                      <%= post.host_species %></p>
+                  <p>
+                      <strong>Description:</strong>
+                      <%= post.description %></p>
+                  <p>
+                      <strong>Latitude:</strong>
+                      <%= post.latitude %></p>
+                  <p>
+                      <strong>Longtitude:</strong>
+                      <%= post.longitude %></p>
+              </br>
+              <%= link_to 'Show', post %>
+              <% if current_user.admin? || post.user_id == current_user.id %>
+              |<%= link_to 'Edit', edit_post_path(post) %>
+              |<%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-        </div>
-        <div class="card-action">
-            <strong>Posted by:</strong>
-            <a href="#" class="capitalize"><%= post.user.username %>
-            </a>
-        </div>
-        <% end %>
-
-    </div>
-
-</div>
+              <% end %>
+          </div>
+          <div class="card-action">
+              <strong>Posted by:</strong>
+              <a href="#" class="capitalize"><%= post.user.username %></a>
+          </div>
+      </div>
+  </div>
+<% end %>
 </div>

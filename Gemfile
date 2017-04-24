@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'pundit'
+gem 'rolify'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'carrierwave', '~> 1.0'
