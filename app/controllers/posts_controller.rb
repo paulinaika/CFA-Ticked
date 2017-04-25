@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy]
   before_action :authenticate_user!
 
   # GET /posts
@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    # To set up the variable for our comment form
     @post = Post.find(params[:id])
     @comment = Comment.new
     # Returns an array with all comments that relate to the post
@@ -78,6 +79,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit([:host_species, :description, :latitude, :longitude, :user_id, {post_image: []}])
+      params.require(:post).permit([:host_species, :description, :address, :latitude, :longitude, :user_id, {post_image: []}])
     end
 end

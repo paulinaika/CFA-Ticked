@@ -1,3 +1,6 @@
+<%= javascript_include_tag ('locationpicker.jquery.min.js') %>
+
+
 <%= form_for(post) do |f| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -28,6 +31,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :address, "Location" %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
     <%= f.label :latitude %>
     <%= f.text_field :latitude %>
   </div>
@@ -36,6 +44,50 @@
     <%= f.label :longitude %>
     <%= f.text_field :longitude %>
   </div>
+
+  <div id="somecomponent" style="width: 500px; height: 400px;"></div>
+
+<script>
+  $( document ).on('turbolinks:load', function() {
+})
+      $('#somecomponent').locationpicker(
+        {
+    location: {
+        latitude: -33.865143,
+        longitude: 151.209900,
+      },
+      locationName: "",
+      radius: 500,
+      zoom: 5,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [],
+      mapOptions: {},
+      scrollwheel: true,
+      inputBinding: {
+          latitudeInput: $('#post_latitude'),
+          longitudeInput: $('#post_longitude'),
+          radiusInput: null,
+          locationNameInput: $('#address')
+      },
+      enableAutocomplete: true,
+      enableAutocompleteBlur: true,
+      autocompleteOptions: true,
+      addressFormat: 'postal_code',
+      enableReverseGeocode: true,
+      draggable: true,
+      onchanged: function(currentLocation, radius, isMarkerDropped) {},
+      onlocationnotfound: function(locationName) {},
+      oninitialized: function (component) {},
+      // must be undefined to use the default gMaps marker
+      markerIcon: undefined,
+      markerDraggable: true,
+      markerVisible : true
+  }
+
+      );
+
+  </script> </br>
+
 
   <div class="actions">
     <%= f.submit %>

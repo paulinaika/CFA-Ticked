@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :ticks
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+  
   devise_for :users
+  resources :ticks
   root 'pages#home'
-
   get 'pages/contact'
-
   get 'pages/geomap'
 
 
