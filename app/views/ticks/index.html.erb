@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= form_tag(ticks_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Ticks" %>
+<%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<% if @ticks.blank? %>
+  <h5>There are no results that match your search: <%= params[:search] %>.</h5>
+<% end %>
+
 <h1>Ticks</h1>
 
 <table>

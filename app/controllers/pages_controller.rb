@@ -8,4 +8,9 @@ class PagesController < ApplicationController
   def geomap
       @ticks = Tick.all
   end
+
+  def taxonomy
+      @ticks = Tick.all
+  end
+
 end

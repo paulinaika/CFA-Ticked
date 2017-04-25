@@ -7,7 +7,14 @@ class TicksController < ApplicationController
   # GET /ticks.json
   def index
     @ticks = Tick.all
+
+    if params[:search]
+      @ticks = Tick.search(params[:search]).order("created_at DESC")
+    else
+      @ticks = Tick.all.order("created_at DESC")
+    end
   end
+
 
   # GET /ticks/1
   # GET /ticks/1.json
