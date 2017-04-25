@@ -13,4 +13,10 @@ class PagesController < ApplicationController
       @ticks = Tick.all
   end
 
+  def admin_dashboard
+      @ticks = Tick.all
+      @posts = Post.all
+      @comments = Comment.all
+  end
+
 end
