@@ -25,12 +25,7 @@
                   <p>
                     <strong>Location:</strong>
                     <%= post.address %></p>
-                <p>
-                      <strong>Latitude:</strong>
-                      <%= post.latitude %></p>
-                  <p>
-                      <strong>Longtitude:</strong>
-                      <%= post.longitude %></p>
+
               </br>
               <%= link_to 'Show', post %>
               <% if current_user.admin? || post.user_id == current_user.id %>

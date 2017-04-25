@@ -21,16 +21,6 @@
   <%= @post.address %>
 </p>
 
-<p>
-  <strong>Latitude:</strong>
-  <%= @post.latitude %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @post.longitude %>
-</p>
-
 
 <% if current_user.admin? || @post.user_id == current_user.id %>
 <%= link_to 'Edit', edit_post_path(@post) %>

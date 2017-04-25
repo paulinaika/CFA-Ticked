@@ -13,7 +13,16 @@
  *= require_tree .
  *= require_self
  */
-@import "materialize";
+ @import "materialize/components/color";
+ $primary-color: color("brown", "darken-3") !default;
+
+ @import 'materialize';
+
+ body {
+    background-image: url(https://image.ibb.co/g0Ou6Q/grass.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
 
 .capitalize {
   text-transform: capitalize !important;
@@ -48,4 +57,9 @@
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+.thumbnail{
+  height: 2px;
+  width: 2px;
 }
