@@ -63,14 +63,15 @@
     <%= f.text_field :longtitude %>
   </div>
 
-
-  Location: <input type="text" id="address" style="width: 300px"/>
+  <div class="field">
+    <%= f.label :address %><br>
+    <input type="text" id="address" style="width: 300px"/>
+  </div>
 
   <div id="somecomponent" style="width: 500px; height: 400px;"></div>
 
-  <script>
+<script>
   $( document ).on('turbolinks:load', function() {
-  console.log("It works on each visit!")
 })
       $('#somecomponent').locationpicker(
         {
@@ -108,9 +109,7 @@
 
       );
 
-
-
-  </script>
+  </script> </br>
 
   <div class="actions">
     <%= f.submit %>
