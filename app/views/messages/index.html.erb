@@ -1,0 +1,34 @@
+<div class="content">
+  <h3>Messages</h3>
+  <% if @over_ten %>
+    <%= link_to 'Show Previous', '?m=all' %>
+  <% end %>
+
+  <div class="card">
+    <div class="card-content">
+      <%= form_for [@conversation, @message] do |f| %>
+        <div class="field">
+          <%= f.text_area :body, class: "input" %>
+        </div>
+        <div class="field">
+          <%= f.submit "Add Reply", class: "button" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <p></p>
+
+  <% @messages.reverse.each do |message| %>
+    <% if message.user != nil %>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-header-title">From: <%= message.user.profile.name %></div>
+        </div>
+        <div class="card-content">
+          <%= message.body %>
+        </div>
+      </div>
+      <p></p>
+    <%  end %>
+  <% end %>
+</div>

@@ -1,0 +1,13 @@
+<div class="content">
+  <h3>Mailbox</h3>
+  <div class="card">
+    <% @conversations.each do |conversation| %>
+      <% if conversation.sender_id == current_user.id ||  %>
+        <%= link_to User.find(conversation.recipient_id).profile.name, conversation_messages_path(conversation)%>
+      <% end %>
+      <% if conversation.recipient_id == current_user.id %>
+        <%= link_to User.find(conversation.sender_id).profile.name, conversation_messages_path(conversation)%>
+      <% end %>
+    <% end %>
+  </div>
+</div>

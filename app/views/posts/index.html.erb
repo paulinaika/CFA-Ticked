@@ -32,16 +32,19 @@
                       <strong>Longtitude:</strong>
                       <%= post.longitude %></p>
               </br>
-              <%= link_to 'Show', post %>
+              <%= link_to 'View More', post %>
               <% if current_user.admin? || post.user_id == current_user.id %>
               |<%= link_to 'Edit', edit_post_path(post) %>
               |<%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
-
               <% end %>
           </div>
           <div class="card-action">
               <strong>Posted by:</strong>
               <a href="#" class="capitalize"><%= post.user.username %></a>
+              <% if post.id != current_user.id %>
+              <%= link_to 'Message me!', conversations_path(sender_id: current_user.id, recipient_id: post.user.id), method: 'post' %>
+              <% end %>
+
           </div>
       </div>
   </div>
