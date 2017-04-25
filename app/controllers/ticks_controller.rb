@@ -1,7 +1,7 @@
 class TicksController < ApplicationController
   before_action :set_tick, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-  before_filter :authorize_admin, only: :index
+  before_action :authorize_admin, only: [:new, :show, :edit, :update, :destroy]
 
   # GET /ticks
   # GET /ticks.json

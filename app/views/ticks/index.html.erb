@@ -42,14 +42,14 @@
         <td><%= tick.control_measures %></td>
         <td><%= tick.latitude %></td>
         <td><%= tick.longtitude %></td>
+          <% if current_user.admin? %>
         <td><%= link_to 'Show', tick %></td>
         <td><%= link_to 'Edit', edit_tick_path(tick) %></td>
-        <td><%= link_to 'Destroy', tick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Tick', new_tick_path %>
