@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   resources :posts do
     resources :comments
   end
@@ -8,6 +10,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'pages/contact'
   get 'pages/geomap'
+  get 'contact', to: "contact#index"
+  post 'contact', to: "contact#mail"
+
 
 
 
