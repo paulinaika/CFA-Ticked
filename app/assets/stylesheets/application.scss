@@ -18,8 +18,10 @@
 
  @import 'materialize';
 
-
-
+ html, body {
+   height: 100%;
+ }
+ 
  footer {
     background-image: url(https://image.ibb.co/g0Ou6Q/grass.jpg);
     background-position: bottom;

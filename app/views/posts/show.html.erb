@@ -28,10 +28,4 @@
 
 <% end %>
 
-<%= render 'comments/form', comment: @comment %>
-
-<% @comments.each do |comment| %>
-  <p><%= comment.user.username %>: <%= comment.content %></p>
-  <p><%= comment.created_at %></p>
-<p> ======================== </p>
-<% end %>
+<%= render 'partials/message' %>
