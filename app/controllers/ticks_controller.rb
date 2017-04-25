@@ -78,6 +78,6 @@ class TicksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tick_params
-      params.require(:tick).permit(:common_name, :scientific_name, :host_species, :common_parasites, :pathogenic_effect, :morphology, :description, :control_measures, :latitude, :longtitude)
+      params.require(:tick).permit([:common_name, :scientific_name, :host_species, :common_parasites, :pathogenic_effect, :morphology, :description, :control_measures, :latitude, :longtitude, {tick_image: []}])
     end
 end

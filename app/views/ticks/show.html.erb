@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <% @tick.tick_image.each do |image| %>
+    <img src="<%= image.url %>">
+  <% end %>
+</p>
+
+<p>
   <strong>Common name:</strong>
   <%= @tick.common_name %>
 </p>

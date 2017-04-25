@@ -13,6 +13,11 @@
     </div>
   <% end %>
 
+  <div class = "field">
+    <%= f.label :pictures %><br>
+    <%= f.file_field :tick_image, multiple: true %>
+    </div>
+
   <div class="field">
     <%= f.label :common_name %>
     <%= f.text_field :common_name %>
