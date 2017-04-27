@@ -6,18 +6,17 @@ class PostPolicy < ApplicationPolicy
     @record = record
   end
 
-  def edit?
-    @record.user == @user
-  end
+  # def edit?
+  #   @record.user == @user
+  # end
 
   def update?
-    @record.user == @user
-
+    user.admin? || @record.user == @user
   end
 
-  def destroy?
-    @record.user == @user
-  end
+  # def destroy?
+  #   @record.user == @user
+  # end
 
   def permitted_attributes
 
