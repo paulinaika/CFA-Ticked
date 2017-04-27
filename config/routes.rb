@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :conversations do
+    resources :messages
+  end
 
   resources :posts do
     resources :comments
@@ -10,7 +13,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'pages/contact'
   get 'pages/geomap'
-    get 'pages/admin_dashboard'
+  get 'pages/admin_dashboard'
   get 'contact', to: "contact#index"
   post 'contact', to: "contact#mail"
 
