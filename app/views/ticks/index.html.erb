@@ -54,7 +54,7 @@
                     <%= tick.control_measures %></p>
 
                   </br>
-                  <%= link_to 'Show', tick %>
+                  <%= link_to 'Read more', tick %>
                   <% if current_user.admin? %>
                   |<%= link_to 'Edit', edit_tick_path(tick)%>
                   |<%= link_to 'Delete', tick, method: :delete, data: { confirm: 'Are you sure?' } %>

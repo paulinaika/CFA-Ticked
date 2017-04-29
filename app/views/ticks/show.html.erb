@@ -56,5 +56,9 @@
   <%= @tick.longtitude %>
 </p>
 
-<%= link_to 'Edit', edit_tick_path(@tick) %> |
 <%= link_to 'Back', ticks_path %>
+
+<!-- only show if current user is admin -->
+<% if current_user.admin? %>
+| <%= link_to 'Edit', edit_tick_path(@tick) %>
+<% end %>
