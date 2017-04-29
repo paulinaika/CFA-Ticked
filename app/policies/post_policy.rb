@@ -14,9 +14,9 @@ class PostPolicy < ApplicationPolicy
     user.admin? || @record.user == @user
   end
 
-  # def destroy?
-  #   @record.user == @user
-  # end
+  def destroy?
+    user.admin? || @record.user == @user
+  end
 
   def permitted_attributes
 

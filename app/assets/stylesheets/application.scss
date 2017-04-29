@@ -48,6 +48,10 @@
   font-size: 1.5em;
 }
 
+.dropdown-content{
+    overflow: visible !important;
+}
+
 .map {
     position: relative;
     padding-bottom: 75%; // This is the aspect ratio

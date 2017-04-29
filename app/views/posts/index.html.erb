@@ -12,7 +12,11 @@
 <div class="col s12 m7">
       <div class="card horizontal">
           <div class="card-image">
-              <%= image_tag(post.post_image[0].url) %><br>
+            <% if post.post_image[0] %>
+           <%= image_tag(post.post_image[0].url) %><br>
+           <% else %>
+             <%= image_tag('tick-icon.png') %>
+           <% end %>
           </div>
           <div class="card-stacked">
               <div class="card-content">

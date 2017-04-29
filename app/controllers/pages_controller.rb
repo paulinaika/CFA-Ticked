@@ -14,6 +14,7 @@ class PagesController < ApplicationController
   end
 
   def admin_dashboard
+    authorize self
       @ticks = Tick.all
       @posts = Post.all
       @comments = Comment.all
