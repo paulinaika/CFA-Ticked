@@ -1,31 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <% @post.post_image.each do |image| %>
-    <img src="<%= image.url %>">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <% @post.post_image.each do |image| %>
+      <img src="<%= image.url %>">
+    <% end %>
+  </p>
+
+  <p>
+    <strong>Host species:</strong>
+    <%= @post.host_species %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @post.description %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= @post.address %>
+  </p>
+
+
+  <% if current_user.admin? || @post.user_id == current_user.id %>
+  <%= link_to 'Edit', edit_post_path(@post) %>
+  |<%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+
   <% end %>
-</p>
 
-<p>
-  <strong>Host species:</strong>
-  <%= @post.host_species %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @post.address %>
-</p>
-
-
-<% if current_user.admin? || @post.user_id == current_user.id %>
-<%= link_to 'Edit', edit_post_path(@post) %>
-|<%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-<% end %>
-
-<%= render 'partials/message' %>
+  <%= render 'partials/message' %>
+</div>

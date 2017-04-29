@@ -1,95 +1,56 @@
 <%= javascript_include_tag ('locationpicker.jquery.min.js') %>
 
+<div class="container">
 
-<%= form_for(post) do |f| %>
-  <% if post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  <%= form_for(post) do |f| %>
+    <% if post.errors.any? %>
+      <div id="error_explanation">
+        <p><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</p>
 
-      <ul>
-      <% post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class = "field">
+      <%= f.label :pictures %><br>
+      <%= f.file_field :post_image, multiple: true %>
+      </div>
+
+
+    <div class="field">
+      <%= f.label :host_species %>
+      <%= f.text_field :host_species %>
+    </div>
+
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, :id => "textarea1", :class => "materialize-textarea"%>
+    </div>
+
+    <div class="field">
+      <%= f.label :address, "Location" %>
+      <%= f.text_field :address %>
+    </div>
+
+    <div class="field">
+      <%#= f.label :latitude %>
+      <%#= f.text_field :latitude %>
+    </div>
+
+    <div class="field">
+      <%#= f.label :longitude %>
+      <%#= f.text_field :longitude %>
+    </div>
+
+
+
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
 
-  <div class = "field">
-    <%= f.label :pictures %><br>
-    <%= f.file_field :post_image, multiple: true %>
-    </div>
-
-
-  <div class="field">
-    <%= f.label :host_species %>
-    <%= f.text_field :host_species %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_area :description, :id => "textarea1", :class => "materialize-textarea"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :address, "Location" %>
-    <%= f.text_field :address %>
-  </div>
-
-  <div class="field">
-    <%#= f.label :latitude %>
-    <%#= f.text_field :latitude %>
-  </div>
-
-  <div class="field">
-    <%#= f.label :longitude %>
-    <%#= f.text_field :longitude %>
-  </div>
-<!--
-  <div id="somecomponent" style="width: 500px; height: 400px;"></div>
-
-<script>
-  $( document ).on('turbolinks:load', function() {
-})
-      $('#somecomponent').locationpicker(
-        {
-    location: {
-        latitude: -33.865143,
-        longitude: 151.209900,
-      },
-      locationName: "",
-      radius: 500,
-      zoom: 5,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [],
-      mapOptions: {},
-      scrollwheel: true,
-      inputBinding: {
-          latitudeInput: $('#post_latitude'),
-          longitudeInput: $('#post_longitude'),
-          radiusInput: null,
-          locationNameInput: $('#address')
-      },
-      enableAutocomplete: true,
-      enableAutocompleteBlur: true,
-      autocompleteOptions: true,
-      addressFormat: 'postal_code',
-      enableReverseGeocode: true,
-      draggable: true,
-      onchanged: function(currentLocation, radius, isMarkerDropped) {},
-      onlocationnotfound: function(locationName) {},
-      oninitialized: function (component) {},
-      // must be undefined to use the default gMaps marker
-      markerIcon: undefined,
-      markerDraggable: true,
-      markerVisible : true
-  }
-
-      );
-
-  </script> </br> -->
-
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

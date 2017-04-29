@@ -8,9 +8,16 @@
         <%= javascript_include_tag 'application'%>
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+        <!-- CSS  -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <!-- Google font: Titillium Web and Roboto -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web" rel="stylesheet">
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -31,13 +38,8 @@
     </head>
 
     <body>
-
-    <%= render 'partials/nav' %>
-    <div class="container">
+      <%= render 'partials/nav' %>
       <%= yield %>
-    </div>
     </body>
-    <footer>
-    <%#= render 'partials/footer' %>
-    </footer>
+    <%= render 'partials/footer' %>
   </html>

@@ -19,6 +19,7 @@
 
 $( document ).ready(function(){
   $('.button-collapse').sideNav();
+
   $('.dropdown-button2').dropdown({
       inDuration: 300,
       outDuration: 225,

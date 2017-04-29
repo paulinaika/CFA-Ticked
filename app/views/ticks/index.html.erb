@@ -1,66 +1,60 @@
-<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
 
-<%= form_tag(ticks_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Ticks" %>
-<%= submit_tag "Search", :name => nil %>
-<% end %>
+  <div class="row">
+    <%= form_tag(ticks_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Ticks" %>
+    <%= submit_tag "Search", :name => nil %>
+    <% end %>
 
-<% if @ticks.blank? %>
-  <h5>There are no results that match your search: <%= params[:search] %></h5>
-<% end %>
+    <% if @ticks.blank? %>
+      <h5>There are no results that match your search: <%= params[:search] %></h5>
+    <% end %>
+  </div>
 
-<h3>Ticks</h3>
 
-<% @ticks.each do |tick| %>
-<div class="col s12 m7">
+  <div class="row">
+    <h3>Ticks Index</h3>
+    <p>Index of current ticks.</p>
+  </div>
+
+
+
+  <div class="row">
+    <% @ticks.each do |tick| %>
+    <div class="col s12 m12 l12">
       <div class="card horizontal">
         <div class="card-image">
-           <% if tick.tick_image[0] %>
+          <% if tick.tick_image[0] %>
           <%= image_tag(tick.tick_image[0].url) %><br>
           <% else %>
-            <%= image_tag('tick-icon.png') %>
+          <%= image_tag('tick-icon.png') %>
           <% end %>
-
         </div>
-          <div class="card-stacked">
-              <div class="card-content">
-                  <p>
-                      <strong>Common name:</strong>
-                      <%= tick.common_name %></p>
 
-                  <p>
-                      <strong>Scientific name:</strong>
-                      <%= tick.scientific_name %></p>
-
-                  <p>
-                      <strong>Host species:</strong>
-                      <%= tick.host_species %></p>
-
-                  <p>
-                      <strong>Common parasites:</strong>
-                      <%= tick.common_parasites %></p>
-                  <p>
-                    <strong>Pathogenic Effect:</strong>
-                    <%= tick.pathogenic_effect %></p>
-                <p>
-                  <strong>Morphology:</strong>
-                  <%= tick.morphology %></p>
-              <p>
-                      <strong>Description:</strong>
-                      <%= tick.description %></p>
-                  <p>
-                    <strong>Control measures:</strong>
-                    <%= tick.control_measures %></p>
-
-                  </br>
-                  <%= link_to 'Read more', tick %>
-                  <% if current_user.admin? %>
-                  |<%= link_to 'Edit', edit_tick_path(tick)%>
-                  |<%= link_to 'Delete', tick, method: :delete, data: { confirm: 'Are you sure?' } %>
-                  <% end %>
-              </div>
-            </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p><strong>Common name:</strong><%= tick.common_name %></p>
+            <p><strong>Scientific name:</strong><%= tick.scientific_name %></p>
+            <p><strong>Host species:</strong><%= tick.host_species %></p>
+            <p><strong>Common parasites:</strong><%= tick.common_parasites %></p>
+            <p><strong>Pathogenic Effect:</strong><%= tick.pathogenic_effect %></p>
+            <p><strong>Morphology:</strong><%= tick.morphology %></p>
+            <p><strong>Description:</strong><%= tick.description %></p>
+            <p><strong>Control measures:</strong><%= tick.control_measures %></p>
+          </br>
+            <%= link_to 'Find out more', tick %>
+            <% if current_user.admin? %>
+            |<%= link_to 'Edit', edit_tick_path(tick)%>
+            |<%= link_to 'Delete', tick, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
           </div>
-          <% end %>
+
         </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

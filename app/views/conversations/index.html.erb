@@ -1,22 +1,25 @@
-<div class="ui segment">
-  <h3>Mailbox</h3>
-  <div class="ui list">
-    <p>
-      You have new messages:
-    </p>
-    <div class="item capitalize">
-      <% @conversations.each do |conversation| %>
 
-        <li><% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
+
+<div class="container">
+  <div class="row">
+    <h3>Mailbox</h3>
+<i class="large material-icons">email</i>
+</div>
+</div>
+
+<div class="container">
+  <div class="row capitalize">
+    <% @conversations.each do |conversation| %>
+      <% if conversation.sender_id == current_user.id || conversation.recipient_id == current_user.id %>
         <% if conversation.sender_id == current_user.id %>
         <% recipient = User.find(conversation.recipient_id) %>
-        <% else %>
+        <% elsif %>
         <% recipient = User.find(conversation.sender_id) %>
-        <% end %>
+      <% end %>
+      <div class="row messenger-box">
         <%= link_to recipient.username, conversation_messages_path(conversation)%>
         <% end %>
-        <% end %>
-      </li>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>

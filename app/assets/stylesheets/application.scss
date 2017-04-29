@@ -13,18 +13,84 @@
  *= require_tree .
  *= require_self
  */
- @import "materialize/components/color";
- $primary-color: color("brown", "darken-3") !default;
-
  @import 'materialize';
+ html {
+   height: 100%;
+ }
+
+   body {
+     display: flex;
+     min-height: 100%;
+     flex-direction: column;
+   }
+
+   .container {
+     flex: 1 0 auto;
+   }
+
+ nav ul a,
+ nav {
+   color: #444;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+p,
+li,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.big-header{
+  font-weight: 700;
+}
+
+.small-text{
+  font-size: 0.9em;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.rounded-corner{
+  border-radius: 1em;
+}
+
+.top-margin{
+  margin-top: 2em;
+}
 
 
- // html {
- //   font-family: GillSans, Calibri, Trebuchet, sans-serif;
- // }
+.nav-wrapper .brand-logo img {
+  height: 64px;
+}
 
-.footer-copyright{
-  color: black;
+.chat-box{
+background-color: #fafafa;
+width: 100%;
+border: 0.5em solid #b2dfdb;
+padding: 4em;
+}
+
+.messenger-box{
+background-color: #f5f5f5;
+padding-left: 2em;
+padding-right: 2em;
+padding-top: 0.1em;
+padding-bottom: 0.1em;
+margin: 0.5em;
+}
+
+.bold{
+  font-weight: 700;
 }
 
 .capitalize {
@@ -77,5 +143,75 @@ color: #394261;
 }
 
 .timestamp{
-  font-size: 0.8em;
+  font-size: 0.6em;
+}
+
+
+#about {
+  /* The image used */
+  background-image: url(cattle.jpg);
+  background-position: 50%;
+
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+.parallax-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (min-width : 992px) {
+  .brand-logo img {
+    margin-left: 0.5em;
+    padding:0.2em;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .brand-logo img {
+    margin: 0;
+    padding:0.2em;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .brand-logo img {
+    margin: 0;
+    padding-bottom:0.4em;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+footer.page-footer {
+  margin: 0;
 }
