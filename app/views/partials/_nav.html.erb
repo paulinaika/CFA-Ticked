@@ -10,8 +10,8 @@
           <li><a href='/pages/admin_dashboard'>Admin Dashboard</a></li>
           <li><a href='/ticks/new'>Add Ticks</a></li>
           <% end %>
-       <li><a href='/ticks'>Taxonomy</a></li>
-       <li><a href='/pages/geomap'>Geomap</a></li>
+       <li><a href='/ticks'>Ticks</a></li>
+       <li><a href='/pages/geomap'>Distribution</a></li>
        <li><a href='/posts'>Forum</a></li>
        <li><a href='/contact'>Contact Us</a></li>
 
@@ -29,9 +29,10 @@
           <li><a href='/ticks/new'>Add Ticks</a></li>
           <li><a href='/pages/admin_dashboard'>Admin Dashboard</a></li>
           <% end %>
-        <li><a href='/ticks'>Taxonomy</a></li>
-        <li><a href='/pages/geomap'>Geomap</a></li>
+        <li><a href='/ticks'>Ticks</a></li>
+        <li><a href='/pages/geomap'>Distribution</a></li>
         <li><a href='/posts'>Forum</a></li>
+        <li><a href='/conversations'>Mailbox</a></li>
         <li><a href='/contact'>Contact Us</a></li>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
         <% else %>
@@ -43,7 +44,7 @@
 
 <!-- dropdown structure -->
 <ul id="dropdown1" class="dropdown-content">
- <li><a href='/conversations'>Messages</a></li>
+ <li><a href='/conversations'>Mailbox</a></li>
  <li class="divider"></li>
  <li>
    <% if user_signed_in? %>
