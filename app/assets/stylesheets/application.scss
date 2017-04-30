@@ -123,14 +123,10 @@ margin: 0.5em;
     padding-bottom: 75%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
+    left:0;
+    right:0;
 }
-.map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
+
 
 .thumbnail{
   height: 2px;

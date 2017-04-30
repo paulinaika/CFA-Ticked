@@ -1,29 +1,25 @@
+<div class="container">
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% elsif flash[:warning] %>
+    <div class="alert alert-danger"><%= flash[:warning] %></div>
+  <% else %>
+  <% end %>
+</div>
 
-<div class="row">
-<div class="col s12 m12 l12">
-
-
-    <% if flash[:notice] %>
-        <div class="notice"><%= flash[:notice] %></div>
-      <% elsif flash[:warning] %>
-        <div class="alert alert-danger"><%= flash[:warning] %></div>
-      <% else %>
-    <% end %>
-  </div>
-    </div>
-
+  <div class="container">
     <div class="row">
-      <div class="col s12 m12 l12">
+      <h3>Contact Us</h3>
+    </div>
+  </div>
 
-
-    <h3>Contact Us</h3>
-
+  <div class="container">
+      <div class="row">
 
       <%= simple_form_for :contact do |f| %>
-          <%= f.input :email, placeholder: 'type email here' %>
-          <%= f.input :message, placeholder: 'type message here', :as => :text %>
-          <%= f.button :submit, "Send" %>
+      <%= f.input :email, placeholder: 'Type email here' %>
+      <%= f.input :message, placeholder: 'Type message here', :as => :text%>
+      <%= f.button :submit, "Send", class: "btn waves-effect waves-light teal lighten-1 rounded-corner"%>
       <% end %>
-
-    </div>
   </div>
+</div>

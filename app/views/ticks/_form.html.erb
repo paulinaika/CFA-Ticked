@@ -71,11 +71,11 @@
     </div>
 
     <div class="field">
-      <%= f.label :address %><br>
-      <input type="text" id="address" style="width: 300px"/>
+      <label for="disabled">Address</label>
+      <input disabled value="Move marker to change" id="address" type="text">
     </div>
 
-    <div id="somecomponent" style="width: 100%; height: 400px;"></div>
+    <div id="somecomponent" style="width: 100%; height: 350px;"></div>
 
   <script>
     $( document ).on('turbolinks:load', function() {
@@ -118,7 +118,7 @@
 
     </script> </br>
 
-    <div class="actions">
+    <div class="actions btn waves-effect waves-light teal lighten-1 rounded-corner">
       <%= f.submit %>
     </div>
   <% end %>
