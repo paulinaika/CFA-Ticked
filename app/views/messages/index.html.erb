@@ -1,19 +1,6 @@
-
 <div class="container">
-  <div class="row top-margin">
-    <div class="capitalize center">
-    <% @conversations.each do |conversation| %>
-    <% if conversation.sender_id == current_user.id %>
-    <% recipient = User.find(conversation.recipient_id) %>
-  <% else conversation.recipient_id == current_user.id %>
-    <% recipient = User.find(conversation.sender_id) %>
-    <h5><%= recipient.username %><h5>
-    <% end %>
-    <% end %>
-    </div>
-  </div>
-</div>
 
+<h3>Messenger</h3>
 
 <div class="row">
   <div class="container chat-box">
@@ -33,13 +20,13 @@
     <% end %>
 
 
-
-
-
     <%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
     <div class="field"><%= f.text_area :body, class: "form-control rounded-corner" %></div>
     <div><%= f.text_field :user_id, value: current_user.id, type: "hidden" %></div>
     <div><%= f.submit "Add Reply", class: "btn waves-effect waves-light teal lighten-1 rounded-corner" %></div>
     <% end %>
   </div>
+</div>
+
+
 </div>

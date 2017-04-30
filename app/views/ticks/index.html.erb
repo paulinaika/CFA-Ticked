@@ -42,10 +42,6 @@
             <p><strong>Scientific name:</strong><%= tick.scientific_name %></p>
             <p><strong>Host species:</strong><%= tick.host_species %></p>
             <p><strong>Common parasites:</strong><%= tick.common_parasites %></p>
-            <p><strong>Pathogenic Effect:</strong><%= tick.pathogenic_effect %></p>
-            <p><strong>Morphology:</strong><%= tick.morphology %></p>
-            <p><strong>Description:</strong><%= tick.description %></p>
-            <p><strong>Control measures:</strong><%= tick.control_measures %></p>
           </br>
             <%= link_to 'Read more', tick %>
             <% if current_user.admin? %>

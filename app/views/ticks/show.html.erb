@@ -62,9 +62,9 @@
 
   <!-- only show if current user is admin -->
   <div class="row">
-    <div class="actions btn waves-effect waves-light teal lighten-1 rounded-corner teal-text">
       <% if current_user.admin? %>
-       <%= link_to 'Edit', edit_tick_path(@tick) %>
+      <div class="actions btn waves-effect waves-light teal lighten-1 rounded-corner">
+       <%= link_to 'Edit', edit_tick_path(@tick), :style=> 'color:#FFFFFF'%>
       <% end %>
     </div>
   </div>
