@@ -6,6 +6,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
   has_many :comments
+  validates :username, :presence => true, :uniqueness => {:case_sensitive => false}
+  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
 
   def admin?
     has_role?(:admin)
