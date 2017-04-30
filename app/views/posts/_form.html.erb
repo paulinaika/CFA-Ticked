@@ -1,5 +1,17 @@
 <%= javascript_include_tag ('locationpicker.jquery.min.js') %>
 
+<script src="http://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLEMAP_SECRET']%>&libraries=places&callback=init" async defer></script>
+
+<script>
+  function init() {
+    var input = document.getElementById('post_address');
+    var options = {
+      types: ['(cities)']
+    };
+    autocomplete = new google.maps.places.Autocomplete( input, options );
+  }
+  google.maps.event.addDomListener(window, 'load', init);
+</script>
 
 <div class="container">
 
@@ -33,7 +45,7 @@
     </div>
 
     <div class="field">
-      <%= f.label :address %>
+      <%= f.label :address, "Suburb"%>
       <%= f.text_field :address %>
     </div>
 
