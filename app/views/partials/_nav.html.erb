@@ -44,7 +44,8 @@
 
 <!-- dropdown structure -->
 <ul id="dropdown1" class="dropdown-content">
- <li><a href='/conversations'>Mailbox</a></li>
+  <!-- <li><a href='/conversations'>Mailbox</a></li> -->
+  <li> <%= link_to 'Conversation', conversations_path(params[:sender_id],params[:recipient_id])%></li>
  <li class="divider"></li>
  <li>
    <% if user_signed_in? %>
