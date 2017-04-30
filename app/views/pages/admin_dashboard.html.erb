@@ -1,15 +1,15 @@
 <div class="container">
-  <div class="row">
+  <div class="row col s12 m12 l12">
     <h5>All Ticks</h5>
 
-     <table>
+     <table class="striped">
        <thead>
          <tr>
            <th>Common name</th>
            <th>Scientific name</th>
            <th>Host species</th>
-           <th>Latitude</th>
-           <th>Longtitude</th>
+           <th class="hide-on-small-only">Latitude</th>
+           <th class="hide-on-small-only">Longtitude</th>
            <th colspan="3"></th>
          </tr>
        </thead>
@@ -20,8 +20,8 @@
              <td><%= tick.common_name %></td>
              <td><%= tick.scientific_name %></td>
              <td><%= tick.host_species %></td>
-             <td><%= tick.latitude %></td>
-             <td><%= tick.longtitude %></td>
+             <td class="hide-on-small-only"><%= tick.latitude %></td>
+             <td class="hide-on-small-only"><%= tick.longtitude %></td>
              <td><%= link_to 'Show', tick %></td>
              <td><%= link_to 'Edit', edit_tick_path(tick) %></td>
              <td><%= link_to 'Destroy', tick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,17 +30,19 @@
        </tbody>
      </table>
   </div>
-  <div class="row">
+</div>
 
-    <h5>All Posts</h5>
+<div class="container">
+  <div class="row col s12 m12 l12">
+   <h5>All Posts</h5>
 
-    <table>
+    <table class="striped">
       <thead>
         <tr>
           <th>User</th>
           <th>Host species</th>
           <th>Description</th>
-          <th>Location</th>
+          <th class="hide-on-small-only">Location</th>
          <th colspan="3"></th>
         </tr>
       </thead>
@@ -51,7 +53,7 @@
             <td><%= post.user.username %></td>
             <td><%= post.host_species %></td>
             <td><%= post.description %></td>
-            <td><%= post.address %></td>
+            <td class="hide-on-small-only"><%= post.address %></td>
             <td><%= link_to 'Show', post %></td>
             <td><%= link_to 'Edit', edit_post_path(post) %></td>
             <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -60,4 +62,34 @@
       </tbody>
     </table>
   </div>
+</div>
+
+<div class="container">
+
+<div class="row col s12 m12 l12">
+ <h5>All Users</h5>
+
+  <table class="striped">
+    <thead>
+      <tr>
+        <th class="hide-on-small-only">User Id</th>
+        <th>Username</th>
+        <th>User Email</th>
+       <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td class="hide-on-small-only"><%= user.id %></td>
+          <td><%= user.username %></td>
+          <td><%= user.email %></td>
+          <td><%= link_to 'Edit', edit_user_registration_path(user) %></td>
+          <td><%#= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 </div>

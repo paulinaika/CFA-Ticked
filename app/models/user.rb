@@ -19,6 +19,7 @@ class User < ApplicationRecord
     @login || self.username || self.email
   end
 
+
 #override Devise Lookup on login
   def self.find_for_database_authentication(warden_conditions)
       conditions = warden_conditions.dup

@@ -18,6 +18,7 @@ class PagesController < ApplicationController
       @ticks = Tick.all
       @posts = Post.all
       @comments = Comment.all
+      @users = User.all
   end
 
 end
