@@ -4,7 +4,7 @@
 
   <p>
     <% @tick.tick_image.each do |image| %>
-      <img src="<%= image.url %>">
+      <img src="<%= image.url %>" class="img-thumbnail">
     <% end %>
   </p>
 
@@ -58,10 +58,14 @@
     <%= @tick.longtitude %>
   </p>
 
-  <%= link_to 'Back', ticks_path %>
+  <%#= link_to 'Back', ticks_path %>
 
   <!-- only show if current user is admin -->
-  <% if current_user.admin? %>
-  | <%= link_to 'Edit', edit_tick_path(@tick) %>
-  <% end %>
+  <div class="row">
+    <div class="actions btn waves-effect waves-light teal lighten-1 rounded-corner teal-text">
+      <% if current_user.admin? %>
+       <%= link_to 'Edit', edit_tick_path(@tick) %>
+      <% end %>
+    </div>
+  </div>
 </div>

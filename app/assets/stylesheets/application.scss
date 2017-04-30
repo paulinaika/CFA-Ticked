@@ -48,6 +48,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
+
 .big-header{
   font-weight: 700;
 }
@@ -127,10 +128,9 @@ margin: 0.5em;
     right:0;
 }
 
-
-.thumbnail{
-  height: 2px;
-  width: 2px;
+.img-thumbnail {
+    height: 10em;
+    width: 10em;
 }
 
 h3 {

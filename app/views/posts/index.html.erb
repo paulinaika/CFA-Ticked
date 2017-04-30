@@ -13,11 +13,13 @@
   <div class="col s12 m12 l12">
         <div class="card horizontal">
             <div class="card-image">
+               <figure class="img-thumbnail">
               <% if post.post_image[0] %>
              <%= image_tag(post.post_image[0].url) %><br>
              <% else %>
                <%= image_tag('tick-icon.png') %>
              <% end %>
+           </figure>
             </div>
             <div class="card-stacked">
                 <div class="card-content">
@@ -26,7 +28,7 @@
                     <p><strong>Location:</strong><%= post.address %></p>
 
                 </br>
-                <%= link_to 'Show', post %>
+                <%= link_to 'Read more', post %>
                 <% if current_user.admin? || post.user_id == current_user.id %>
                 |<%= link_to 'Edit', edit_post_path(post) %>
                 |<%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
