@@ -43,7 +43,7 @@ so that users could use it on the go.
 
 <p align="center">
   <img src="https://image.ibb.co/hg5G5k/Screen_Shot_2017_05_01_at_2_58_53_PM.png">
-  <img src="https://image.ibb.co/iJ1EQk/Screen_Shot_2017_05_01_at_9_16_34_AM.png">
+  <img src="https://image.ibb.co/f8tfWQ/Screen_Shot_2017_05_01_at_3_02_10_PM.png">
 </p>
 
 
