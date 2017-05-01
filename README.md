@@ -28,14 +28,13 @@ Since my main users would be researchers and cattle breeders, I wanted an app th
 This was the initial design of the application. However, I felt that since the topic is
 quite dry, I wanted it to look more vibrant. Thus, I redesigned the website.
 
-<p align="center">
 ![alt tag](https://image.ibb.co/iFU1mQ/Screen_Shot_2017_04_26_at_9_33_27_AM.png)
 ![alt tag](https://image.ibb.co/bDFXRQ/Screen_Shot_2017_04_26_at_6_50_04_AM.png)
 ![alt tag](https://image.ibb.co/bzbvfk/Screen_Shot_2017_04_26_at_6_49_45_AM.png)
 ![alt tag](https://image.ibb.co/mPNCRQ/Screen_Shot_2017_04_26_at_6_50_21_AM.png)
 ![alt tag](https://image.ibb.co/dxakD5/Screen_Shot_2017_04_26_at_9_35_39_AM.png)
 ![alt tag](https://image.ibb.co/hgG6mQ/Screen_Shot_2017_04_26_at_6_51_03_AM.png)
-</p>
+
 
 The website is both mobile and web friendly. However, it is designed with simple functionality
 so that users could use it on the go.
