@@ -47,6 +47,12 @@ so that users could use it on the go.
 </p>
 
 
+# User Flow
+<p align="center">
+  <img src="https://image.ibb.co/gk9qy5/user_flow.png">
+</p>
+
+
 # Functionality (Main Features)
 Display of the login page.
 <br>
