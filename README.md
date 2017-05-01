@@ -26,25 +26,24 @@ Since my main users would be researchers and cattle breeders, I wanted an app th
 
 
 ## Initial Design
-This was the initial design of the application. However, I felt that since the topic is
-quite dry, I wanted it to look more vibrant. Thus, I redesigned the website.
+This was the initial design of the application. However, since the topic is
+quite dry, I wanted it to look more vibrant and more inviting for the user.
+Thus, I redesigned the website.
 
-
-![alt tag](https://image.ibb.co/ewNqWQ/Screen_Shot_2017_05_01_at_12_40_08_PM.png)
-![alt tag](https://image.ibb.co/eLNeQk/Screen_Shot_2017_05_01_at_12_41_25_PM.png)
-![alt tag](https://image.ibb.co/cAyay5/Screen_Shot_2017_05_01_at_12_42_11_PM.png)
-
+<p align="center">
+<img src="https://image.ibb.co/gOsky5/Screen_Shot_2017_05_01_at_2_50_21_PM.png" width="510" />
+<img src="https://image.ibb.co/eBv5y5/Screen_Shot_2017_05_01_at_2_50_35_PM.png" width="510" />
+<img src="https://image.ibb.co/m7pnBQ/Screen_Shot_2017_05_01_at_2_50_51_PM.png" width="510" />
+</p>
 
 
 ## Final Design
 The website is both mobile and web friendly. However, it is designed with simple functionality
 so that users could use it on the go.
 
-
-![alt tag](https://image.ibb.co/iJ1EQk/Screen_Shot_2017_05_01_at_9_16_34_AM.png)
-
 <p align="center">
-  <img src="https://image.ibb.co/fWCzrQ/Screen_Shot_2017_05_01_at_8_44_40_AM.png">
+  <img src="https://image.ibb.co/hg5G5k/Screen_Shot_2017_05_01_at_2_58_53_PM.png">
+  <img src="https://image.ibb.co/iJ1EQk/Screen_Shot_2017_05_01_at_9_16_34_AM.png">
 </p>
 
 
