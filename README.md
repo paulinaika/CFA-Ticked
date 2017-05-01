@@ -1,6 +1,7 @@
 <p align="center">
 <img src="https://image.ibb.co/gsTD1Q/ticked.png" width="300" />
 </p>
+
 Live app: [Ticked](https://ticked-app.herokuapp.com/)
 
 # About the Project
