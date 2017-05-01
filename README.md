@@ -18,9 +18,11 @@ I have brainstormed the idea and possible problems of this project through [Trel
 # Design Decisions
 Since my main users would be researchers and cattle breeders, I wanted an app that look clean and professional rather than something that is looking very fancy. One of the main reasons is that most of the cattle breeders are living in rural areas where there are limited connection. Therefore, I has developed the app to be mobile friendly first rather than for web design functionality so that it can be easily accessible even with limited connection.
 
-![alt tag](https://image.ibb.co/m7vAWQ/Screen_Shot_2017_05_01_at_12_36_18_PM.png)
+<p align="center">
+<img src="https://image.ibb.co/bxwjrQ/p1.png" width="475" />
+<img src="https://image.ibb.co/iPgHBQ/p2.png" width="475" />
+</p>
 
-![alt tag](https://image.ibb.co/j3gTJ5/Screen_Shot_2017_05_01_at_12_37_24_PM.png)
 
 
 ## Initial Design
