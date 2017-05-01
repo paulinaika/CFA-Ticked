@@ -52,7 +52,7 @@ Display of the login page.
 <br>
 <br>
 <p align="center">
-  <img src="https://image.ibb.co/gPf8kk/Screen_Shot_2017_05_01_at_8_45_02_AM.png">
+  <img src="https://image.ibb.co/m238J5/Screen_Shot_2017_05_01_at_3_05_04_PM.png">
 </p>
 <br>
 <br>
@@ -62,16 +62,26 @@ When login is successful, the user is redirected to the homepage.
 <br>
 <br>
 <p align="center">
-  <img src="https://image.ibb.co/nNTuQk/Screen_Shot_2017_05_01_at_8_45_24_AM.png">
+  <img src="https://image.ibb.co/mGsqWQ/Screen_Shot_2017_05_01_at_3_05_32_PM.png">
 </p>
 <br>
 <br>
 <br>
 
-Admin can add ticks to the listing.
+An admin can add ticks to the listing.
 <br>
 <br>
-<img src="https://image.ibb.co/mG6QWQ/Screen_Shot_2017_05_01_at_8_46_05_AM.png" width="425"/> <img src="https://image.ibb.co/nwJTkk/Screen_Shot_2017_05_01_at_8_46_21_AM.png" width="425"/>
+<img src="https://image.ibb.co/bviKQk/Screen_Shot_2017_05_01_at_3_05_59_PM.png" width="425"/> <img src="https://image.ibb.co/m3koJ5/Screen_Shot_2017_05_01_at_3_06_27_PM.png" width="425"/>
+<br>
+<br>
+<br>
+
+An admin has a dashboard to administer the site.
+<br>
+<br>
+<p align="center">
+  <img src="https://image.ibb.co/iuhDkk/Screen_Shot_2017_05_01_at_3_05_44_PM.png">
+</p>
 <br>
 <br>
 <br>
@@ -80,7 +90,7 @@ Normal user only can view the tick listing.
 <br>
 <br>
 <p align="center">
-  <img src="https://image.ibb.co/cHXcd5/Screen_Shot_2017_05_01_at_8_46_55_AM.png">
+  <img src="https://image.ibb.co/mSfzQk/Screen_Shot_2017_05_01_at_3_10_28_PM.png">
 </p>
 <br>
 <br>
@@ -90,7 +100,7 @@ Users could see the distribution of ticks through the geomap.
 <br>
 <br>
 <p align="center">
-  <img src="https://image.ibb.co/k3oHd5/Screen_Shot_2017_05_01_at_8_47_13_AM.png">
+  <img src="https://image.ibb.co/cAQzQk/Screen_Shot_2017_05_01_at_3_07_51_PM.png">
 </p>
 <br>
 <br>
@@ -99,9 +109,7 @@ Users could see the distribution of ticks through the geomap.
 Users can post in forum and have a discussion regarding new sighting around the area and related topics.
 <br>
 <br>
-<p align="center">
-  <img src="https://image.ibb.co/iXkKrQ/Screen_Shot_2017_05_01_at_8_47_27_AM.png">
-</p>
+<img src="https://image.ibb.co/jUceQk/Screen_Shot_2017_05_01_at_3_10_58_PM.png" width="425"/> <img src="https://image.ibb.co/n96HBQ/Screen_Shot_2017_05_01_at_3_11_51_PM.png" width="425"/>
 <br>
 <br>
 <br>
@@ -109,7 +117,7 @@ Users can post in forum and have a discussion regarding new sighting around the 
 Users can have personal chat with other users through the messenger.
 <br>
 <br>
-<img src="https://image.ibb.co/c7VkWQ/Screen_Shot_2017_05_01_at_9_15_23_AM.png" width="425"/> <img src="https://image.ibb.co/gPkkWQ/Screen_Shot_2017_05_01_at_9_15_42_AM.png" width="425"/>
+<img src="https://image.ibb.co/ekFoJ5/Screen_Shot_2017_05_01_at_3_12_15_PM.png" width="425"/> <img src="https://image.ibb.co/bTSw5k/Screen_Shot_2017_05_01_at_3_20_08_PM.png" width="425"/>
 <br>
 <br>
 <br>
@@ -118,7 +126,7 @@ User can send email through the email form.
 <br>
 <br>
 <p align="center">
-  <img src="https://image.ibb.co/iytuQk/Screen_Shot_2017_05_01_at_9_15_57_AM.png">
+  <img src="https://image.ibb.co/bKQoJ5/Screen_Shot_2017_05_01_at_3_12_33_PM.png">
 </p>
 <br>
 <br>
