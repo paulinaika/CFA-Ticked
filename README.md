@@ -49,7 +49,7 @@ so that users could use it on the go.
 
 # User Flow
 <p align="center">
-  <img src="https://image.ibb.co/gk9qy5/user_flow.png">
+  <img src="https://image.ibb.co/czgsBQ/user_flow.png">
 </p>
 
 
