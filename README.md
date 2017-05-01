@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://image.ibb.co/gsTD1Q/ticked.png" width="300" />
-[Ticked](https://ticked-app.herokuapp.com/)
 </p>
+Live app: [Ticked](https://ticked-app.herokuapp.com/)
 
 # About the Project
 A study conducted by Meat and Livestock Australia (MLA) estimated that tick-borne diseases cost the cattle industry approximately $146m in production losses and control costs. As ticks developed a quick resistant to vaccines, it is important for researchers to get real time data to speed up the research process to understand the distribution in order to study the origin and prevent the spread of tick-borne diseases.
@@ -17,20 +17,24 @@ I have brainstormed the idea and possible problems of this project through [Trel
 # Design Decisions
 Since my main users would be researchers and cattle breeders, I wanted an app that look clean and professional rather than something that is looking very fancy. One of the main reasons is that most of the cattle breeders are living in rural areas where there are limited connection. Therefore, I has developed the app to be mobile friendly first rather than for web design functionality so that it can be easily accessible even with limited connection.
 
+<p align="center">
 <img src="https://image.ibb.co/d27U6Q/Screen_Shot_2017_04_26_at_6_44_29_AM.png" width="250"/> <img src="https://image.ibb.co/gtVMLk/Screen_Shot_2017_04_26_at_6_44_39_AM.png" width="250"/> <img src="https://image.ibb.co/bHGHt5/Screen_Shot_2017_04_26_at_6_44_48_AM.png" width="250"/>
 
 <img src="https://image.ibb.co/mU9Ffk/Screen_Shot_2017_04_26_at_6_45_12_AM.png" width="250"/> <img src="https://image.ibb.co/bT4RmQ/Screen_Shot_2017_04_26_at_6_45_30_AM.png" width="250"/> <img src="https://image.ibb.co/nNPgLk/Screen_Shot_2017_04_26_at_6_45_00_AM.png" width="250"/>
+</p>
 
 ## Initial Design
 This was the initial design of the application. However, I felt that since the topic is
 quite dry, I wanted it to look more vibrant. Thus, I redesigned the website.
 
+<p align="center">
 ![alt tag](https://image.ibb.co/iFU1mQ/Screen_Shot_2017_04_26_at_9_33_27_AM.png)
 ![alt tag](https://image.ibb.co/bDFXRQ/Screen_Shot_2017_04_26_at_6_50_04_AM.png)
 ![alt tag](https://image.ibb.co/bzbvfk/Screen_Shot_2017_04_26_at_6_49_45_AM.png)
 ![alt tag](https://image.ibb.co/mPNCRQ/Screen_Shot_2017_04_26_at_6_50_21_AM.png)
 ![alt tag](https://image.ibb.co/dxakD5/Screen_Shot_2017_04_26_at_9_35_39_AM.png)
 ![alt tag](https://image.ibb.co/hgG6mQ/Screen_Shot_2017_04_26_at_6_51_03_AM.png)
+</p>
 
 The website is both mobile and web friendly. However, it is designed with simple functionality
 so that users could use it on the go.
