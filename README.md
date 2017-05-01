@@ -1,5 +1,6 @@
 <p align="center">
 <img src="https://image.ibb.co/gsTD1Q/ticked.png" width="300" />
+[Ticked](https://ticked-app.herokuapp.com/)
 </p>
 
 # About the Project
@@ -92,7 +93,7 @@ User can send email through the email form.
 <br>
 <br>
 
-#Testing
+# Testing
 Without the latitude and longitude input in the form filled, it will not be able to
 generate the geolocation, which will not serve the main objective of this app.
 Therefore, I had to ensure that the test revolve around making sure that the location fields
