@@ -36,8 +36,14 @@ quite dry, I wanted it to look more vibrant. Thus, I redesigned the website.
 ![alt tag](https://image.ibb.co/hgG6mQ/Screen_Shot_2017_04_26_at_6_51_03_AM.png)
 
 
+## Final Design
 The website is both mobile and web friendly. However, it is designed with simple functionality
 so that users could use it on the go.
+
+
+![alt tag](https://image.ibb.co/iJ1EQk/Screen_Shot_2017_05_01_at_9_16_34_AM.png)
+![alt tag](https://image.ibb.co/fWCzrQ/Screen_Shot_2017_05_01_at_8_44_40_AM.png)
+
 
 # Functionality (Main Features)
 Display of the login page.
