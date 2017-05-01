@@ -18,22 +18,20 @@ I have brainstormed the idea and possible problems of this project through [Trel
 # Design Decisions
 Since my main users would be researchers and cattle breeders, I wanted an app that look clean and professional rather than something that is looking very fancy. One of the main reasons is that most of the cattle breeders are living in rural areas where there are limited connection. Therefore, I has developed the app to be mobile friendly first rather than for web design functionality so that it can be easily accessible even with limited connection.
 
-<p align="center">
-<img src="https://image.ibb.co/d27U6Q/Screen_Shot_2017_04_26_at_6_44_29_AM.png" width="250"/> <img src="https://image.ibb.co/gtVMLk/Screen_Shot_2017_04_26_at_6_44_39_AM.png" width="250"/> <img src="https://image.ibb.co/bHGHt5/Screen_Shot_2017_04_26_at_6_44_48_AM.png" width="250"/>
+![alt tag](https://image.ibb.co/m7vAWQ/Screen_Shot_2017_05_01_at_12_36_18_PM.png)
 
-<img src="https://image.ibb.co/mU9Ffk/Screen_Shot_2017_04_26_at_6_45_12_AM.png" width="250"/> <img src="https://image.ibb.co/bT4RmQ/Screen_Shot_2017_04_26_at_6_45_30_AM.png" width="250"/> <img src="https://image.ibb.co/nNPgLk/Screen_Shot_2017_04_26_at_6_45_00_AM.png" width="250"/>
-</p>
+![alt tag](https://image.ibb.co/j3gTJ5/Screen_Shot_2017_05_01_at_12_37_24_PM.png)
+
 
 ## Initial Design
 This was the initial design of the application. However, I felt that since the topic is
 quite dry, I wanted it to look more vibrant. Thus, I redesigned the website.
 
-![alt tag](https://image.ibb.co/iFU1mQ/Screen_Shot_2017_04_26_at_9_33_27_AM.png)
-![alt tag](https://image.ibb.co/bDFXRQ/Screen_Shot_2017_04_26_at_6_50_04_AM.png)
-![alt tag](https://image.ibb.co/bzbvfk/Screen_Shot_2017_04_26_at_6_49_45_AM.png)
-![alt tag](https://image.ibb.co/mPNCRQ/Screen_Shot_2017_04_26_at_6_50_21_AM.png)
-![alt tag](https://image.ibb.co/dxakD5/Screen_Shot_2017_04_26_at_9_35_39_AM.png)
-![alt tag](https://image.ibb.co/hgG6mQ/Screen_Shot_2017_04_26_at_6_51_03_AM.png)
+
+![alt tag](https://image.ibb.co/ewNqWQ/Screen_Shot_2017_05_01_at_12_40_08_PM.png)
+![alt tag](https://image.ibb.co/eLNeQk/Screen_Shot_2017_05_01_at_12_41_25_PM.png)
+![alt tag](https://image.ibb.co/cAyay5/Screen_Shot_2017_05_01_at_12_42_11_PM.png)
+
 
 
 ## Final Design
@@ -42,24 +40,33 @@ so that users could use it on the go.
 
 
 ![alt tag](https://image.ibb.co/iJ1EQk/Screen_Shot_2017_05_01_at_9_16_34_AM.png)
-![alt tag](https://image.ibb.co/fWCzrQ/Screen_Shot_2017_05_01_at_8_44_40_AM.png)
+
+<p align="center">
+  <img src="https://image.ibb.co/fWCzrQ/Screen_Shot_2017_05_01_at_8_44_40_AM.png">
+</p>
 
 
 # Functionality (Main Features)
 Display of the login page.
 <br>
 <br>
-![alt tag](https://image.ibb.co/gPf8kk/Screen_Shot_2017_05_01_at_8_45_02_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/gPf8kk/Screen_Shot_2017_05_01_at_8_45_02_AM.png">
+</p>
 <br>
 <br>
 <br>
+
 When login is successful, the user is redirected to the homepage.
 <br>
 <br>
-![alt tag](https://image.ibb.co/nNTuQk/Screen_Shot_2017_05_01_at_8_45_24_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/nNTuQk/Screen_Shot_2017_05_01_at_8_45_24_AM.png">
+</p>
 <br>
 <br>
 <br>
+
 Admin can add ticks to the listing.
 <br>
 <br>
@@ -67,27 +74,37 @@ Admin can add ticks to the listing.
 <br>
 <br>
 <br>
+
 Normal user only can view the tick listing.
 <br>
 <br>
-![alt tag](https://image.ibb.co/cHXcd5/Screen_Shot_2017_05_01_at_8_46_55_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/cHXcd5/Screen_Shot_2017_05_01_at_8_46_55_AM.png">
+</p>
 <br>
 <br>
 <br>
+
 Users could see the distribution of ticks through the geomap.
 <br>
 <br>
-![alt tag](https://image.ibb.co/k3oHd5/Screen_Shot_2017_05_01_at_8_47_13_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/k3oHd5/Screen_Shot_2017_05_01_at_8_47_13_AM.png">
+</p>
 <br>
 <br>
 <br>
+
 Users can post in forum and have a discussion regarding new sighting around the area and related topics.
 <br>
 <br>
-![alt tag](https://image.ibb.co/iXkKrQ/Screen_Shot_2017_05_01_at_8_47_27_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/iXkKrQ/Screen_Shot_2017_05_01_at_8_47_27_AM.png">
+</p>
 <br>
 <br>
 <br>
+
 Users can have personal chat with other users through the messenger.
 <br>
 <br>
@@ -95,10 +112,13 @@ Users can have personal chat with other users through the messenger.
 <br>
 <br>
 <br>
+
 User can send email through the email form.
 <br>
 <br>
-![alt tag](https://image.ibb.co/iytuQk/Screen_Shot_2017_05_01_at_9_15_57_AM.png)
+<p align="center">
+  <img src="https://image.ibb.co/iytuQk/Screen_Shot_2017_05_01_at_9_15_57_AM.png">
+</p>
 <br>
 <br>
 <br>
@@ -111,7 +131,26 @@ are filled before submission.
 ![alt tag](https://image.ibb.co/ekHw5k/Screen_Shot_2017_04_30_at_11_59_44_PM.png)
 ![alt tag](https://image.ibb.co/dinw5k/Screen_Shot_2017_05_01_at_12_18_13_AM.png)
 
-## Installation
+
+# Gems Used
+```
+gem 'simple_form'
+gem 'pundit'
+gem 'rolify'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'carrierwave', '~> 1.0'
+gem 'devise'
+gem 'materialize-sass'
+```
+
+# API Used
+1. Google Map API
+2. Mailgun API
+
+
+# Installation
+## Install the gems
 * Run  `bundle` to install the gems.
 
 ## Create database
