@@ -117,7 +117,7 @@ Users can post in forum and have a discussion regarding new sighting around the 
 Users can have personal chat with other users through the messenger.
 <br>
 <br>
-<img src="https://image.ibb.co/ekFoJ5/Screen_Shot_2017_05_01_at_3_12_15_PM.png" width="375"/> <img src="https://image.ibb.co/bTSw5k/Screen_Shot_2017_05_01_at_3_20_08_PM.png" width="375"/>
+<img src="https://image.ibb.co/ekFoJ5/Screen_Shot_2017_05_01_at_3_12_15_PM.png" width="375"/> <img src="https://image.ibb.co/bTSw5k/Screen_Shot_2017_05_01_at_3_20_08_PM.png" width="380"/>
 <br>
 <br>
 <br>
