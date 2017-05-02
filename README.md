@@ -4,6 +4,24 @@
 
 Live app: [Ticked](https://ticked-app.herokuapp.com/)
 
+# Table of Content
+- [About the Project](https://github.com/paulinaika/CFA-Ticked#about-the-project)
+- [The Thinking Process](https://github.com/paulinaika/CFA-Ticked#the-thinking-process)
+- [Design Decisions](https://github.com/paulinaika/CFA-Ticked#design-decisions)
+    * [Initial Design](https://github.com/paulinaika/CFA-Ticked#initial-design)
+    * [Final Design](https://github.com/paulinaika/CFA-Ticked#final-design)
+- [User Flow](https://github.com/paulinaika/CFA-Ticked#user-flow)
+- [Functionality (Main Features](https://github.com/paulinaika/CFA-Ticked#functionality-main-features)
+- [Testing](https://github.com/paulinaika/CFA-Ticked#testing)
+- [Gems Used](https://github.com/paulinaika/CFA-Ticked#gems-used)
+- [API Used](https://github.com/paulinaika/CFA-Ticked#api-used)
+- [Installations](https://github.com/paulinaika/CFA-Ticked#installation)
+    * [Install the Gems](https://github.com/paulinaika/CFA-Ticked#install-the-gems)
+    * [Create Database](https://github.com/paulinaika/CFA-Ticked#create-database)
+    * [Migration](https://github.com/paulinaika/CFA-Ticked#migration)
+    * [Seeds Generation](https://github.com/paulinaika/CFA-Ticked#seeds-generation)
+
+
 # About the Project
 A study conducted by Meat and Livestock Australia (MLA) estimated that tick-borne diseases cost the cattle industry approximately $146m in production losses and control costs. As ticks developed a quick resistant to vaccines, it is important for researchers to get real time data to speed up the research process to understand the distribution in order to study the origin and prevent the spread of tick-borne diseases.
 
@@ -164,7 +182,7 @@ gem 'materialize-sass'
 2. Mailgun API
 
 
-# Installation
+# Installations
 ## Install the gems
 * Run  `bundle` to install the gems.
 
