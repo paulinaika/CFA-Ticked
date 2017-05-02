@@ -4,7 +4,7 @@
 
 Live app: [Ticked](https://ticked-app.herokuapp.com/)
 
-# Table of Content
+# Content
 - [About the Project](https://github.com/paulinaika/CFA-Ticked#about-the-project)
 - [The Thinking Process](https://github.com/paulinaika/CFA-Ticked#the-thinking-process)
 - [Design Decisions](https://github.com/paulinaika/CFA-Ticked#design-decisions)
