@@ -75,7 +75,6 @@ so that users could use it on the go.
 # Functionality (Main Features)
 Display of the login page.
 <br>
-<br>
 <p align="center">
   <img src="https://image.ibb.co/m238J5/Screen_Shot_2017_05_01_at_3_05_04_PM.png">
 </p>
@@ -84,7 +83,6 @@ Display of the login page.
 <br>
 
 When login is successful, the user is redirected to the homepage.
-<br>
 <br>
 <p align="center">
   <img src="https://image.ibb.co/mGsqWQ/Screen_Shot_2017_05_01_at_3_05_32_PM.png">
@@ -95,7 +93,6 @@ When login is successful, the user is redirected to the homepage.
 
 An admin can add ticks to the listing.
 <br>
-<br>
 <p align="center">
 <img src="https://image.ibb.co/bviKQk/Screen_Shot_2017_05_01_at_3_05_59_PM.png" width="375"/> <img src="https://image.ibb.co/m3koJ5/Screen_Shot_2017_05_01_at_3_06_27_PM.png" width="375"/>
 </p>
@@ -104,7 +101,6 @@ An admin can add ticks to the listing.
 <br>
 
 An admin has a dashboard to administer the site.
-<br>
 <br>
 <p align="center">
   <img src="https://image.ibb.co/iuhDkk/Screen_Shot_2017_05_01_at_3_05_44_PM.png">
@@ -115,7 +111,6 @@ An admin has a dashboard to administer the site.
 
 Normal user only can view the tick listing.
 <br>
-<br>
 <p align="center">
   <img src="https://image.ibb.co/mSfzQk/Screen_Shot_2017_05_01_at_3_10_28_PM.png">
 </p>
@@ -124,7 +119,6 @@ Normal user only can view the tick listing.
 <br>
 
 Users could see the distribution of ticks through the geomap.
-<br>
 <br>
 <p align="center">
   <img src="https://image.ibb.co/cAQzQk/Screen_Shot_2017_05_01_at_3_07_51_PM.png">
@@ -135,7 +129,6 @@ Users could see the distribution of ticks through the geomap.
 
 Users can post in forum and have a discussion regarding new sighting around the area and related topics.
 <br>
-<br>
 <p align="center">
 <img src="https://image.ibb.co/jUceQk/Screen_Shot_2017_05_01_at_3_10_58_PM.png" width="375"/> <img src="https://image.ibb.co/n96HBQ/Screen_Shot_2017_05_01_at_3_11_51_PM.png" width="375"/>
 </p>
@@ -145,7 +138,6 @@ Users can post in forum and have a discussion regarding new sighting around the 
 
 Users can have personal chat with other users through the messenger.
 <br>
-<br>
 <p align="center">
 <img src="https://image.ibb.co/ekFoJ5/Screen_Shot_2017_05_01_at_3_12_15_PM.png" width="375"/> <img src="https://image.ibb.co/bTSw5k/Screen_Shot_2017_05_01_at_3_20_08_PM.png" width="380"/>
 </p>
@@ -154,7 +146,6 @@ Users can have personal chat with other users through the messenger.
 <br>
 
 User can send email through the email form.
-<br>
 <br>
 <p align="center">
   <img src="https://image.ibb.co/bKQoJ5/Screen_Shot_2017_05_01_at_3_12_33_PM.png">
