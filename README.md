@@ -13,10 +13,11 @@ Live app: [Ticked](https://ticked-app.herokuapp.com/)
 - [User Flow](https://github.com/paulinaika/CFA-Ticked#user-flow)
 - [Functionality (Main Features](https://github.com/paulinaika/CFA-Ticked#functionality-main-features)
 - [Testing](https://github.com/paulinaika/CFA-Ticked#testing)
+- [Code Quality Tools](https://github.com/paulinaika/CFA-Ticked#code-quality-tools)
 - [Gems Used](https://github.com/paulinaika/CFA-Ticked#gems-used)
 - [API Used](https://github.com/paulinaika/CFA-Ticked#api-used)
 - [Installations](https://github.com/paulinaika/CFA-Ticked#installation)
-    * [Install the Gems](https://github.com/paulinaika/CFA-Ticked#install-the-gems)
+    * [Gems Installation](https://github.com/paulinaika/CFA-Ticked#gems-installation)
     * [Create Database](https://github.com/paulinaika/CFA-Ticked#create-database)
     * [Migration](https://github.com/paulinaika/CFA-Ticked#migration)
     * [Seeds Generation](https://github.com/paulinaika/CFA-Ticked#seeds-generation)
@@ -160,9 +161,17 @@ User can send email through the email form.
 Without the latitude and longitude input in the form filled, it will not be able to
 generate the geolocation, which will not serve the main objective of this app.
 Therefore, I had to ensure that the test revolve around making sure that the location fields
-are filled before submission.
-![alt tag](https://image.ibb.co/ekHw5k/Screen_Shot_2017_04_30_at_11_59_44_PM.png)
-![alt tag](https://image.ibb.co/dinw5k/Screen_Shot_2017_05_01_at_12_18_13_AM.png)
+are filled before submission so that it will not affect locations on the distribution map.
+<p align="center">
+  <img src="https://image.ibb.co/ekHw5k/Screen_Shot_2017_04_30_at_11_59_44_PM.png">
+  <img src="https://image.ibb.co/dinw5k/Screen_Shot_2017_05_01_at_12_18_13_AM.png">
+</p>
+
+
+# Code Quality Tools
+<p align="center">
+  <img src="https://image.ibb.co/kt0VY5/Screen_Shot_2017_05_02_at_10_32_43_AM.png">
+</p>
 
 
 # Gems Used
@@ -183,7 +192,7 @@ gem 'materialize-sass'
 
 
 # Installations
-## Install the gems
+## Gems Installation
 * Run  `bundle` to install the gems.
 
 ## Create database
