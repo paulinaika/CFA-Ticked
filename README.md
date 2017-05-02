@@ -169,6 +169,7 @@ are filled before submission so that it will not affect locations on the distrib
 
 
 # Code Quality Tools
+The code quality tool used for this application is [Rubocop](https://github.com/bbatsov/rubocop).
 <p align="center">
   <img src="https://image.ibb.co/kt0VY5/Screen_Shot_2017_05_02_at_10_32_43_AM.png">
 </p>
