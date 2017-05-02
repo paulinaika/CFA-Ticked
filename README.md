@@ -96,7 +96,9 @@ When login is successful, the user is redirected to the homepage.
 An admin can add ticks to the listing.
 <br>
 <br>
+<p align="center">
 <img src="https://image.ibb.co/bviKQk/Screen_Shot_2017_05_01_at_3_05_59_PM.png" width="375"/> <img src="https://image.ibb.co/m3koJ5/Screen_Shot_2017_05_01_at_3_06_27_PM.png" width="375"/>
+</p>
 <br>
 <br>
 <br>
